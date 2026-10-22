@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    @apply bg-background;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply min-h-screen bg-background text-foreground font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display font-semibold text-foreground;
+  }
+
+  a {
+    @apply text-primary-600 underline-offset-2;
+  }
+
+  a:hover {
+    @apply text-primary-700 underline;
+  }
+
+  button,
+  [role='button'],
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-focus ring-offset-2 ring-offset-surface;
+  }
+
+  ::selection {
+    @apply bg-primary-100 text-primary-950;
+  }
+
+  hr {
+    @apply border-0 border-t border-border;
+  }
+
+  table {
+    @apply w-full border-collapse text-left;
+  }
+
+  caption {
+    @apply mb-3 text-left text-sm text-foreground-muted;
+  }
+
+  th {
+    @apply border-b border-border bg-surface-muted px-4 py-3 text-sm font-semibold text-foreground;
+  }
+
+  td {
+    @apply border-b border-border-muted px-4 py-3 text-sm text-foreground-muted;
+  }
+}
+
+@layer utilities {
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .not-sr-only {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+}

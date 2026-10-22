@@ -1,0 +1,231 @@
+const MIGUEL_PROFILE_ID = 'profile-miguel-rosa';
+const ROSA_PROFILE_ID = 'profile-rosa-santos';
+
+const MIGUEL_CHECKING_ACCOUNT = Object.freeze({
+  id: 'account-miguel-checking',
+  accountId: 'account-miguel-checking',
+  profileId: MIGUEL_PROFILE_ID,
+  userId: 'miguel',
+  number: '•••• 4821',
+  accountNumber: '•••• 4821',
+  maskedAccountNumber: '•••• 4821',
+  name: 'Payroll account',
+  type: 'deposit',
+  subtype: 'payroll',
+  currency: 'PHP',
+  balance: 26240.15,
+  availableBalance: 26240.15,
+  currentBalance: 26240.15,
+  status: 'active',
+  institution: 'BPI BANK',
+  openedAt: '2021-03-15',
+  lastUpdated: '2026-10-14T08:10:00+08:00',
+  figuresSummary: 'Available and current PHP 26,240.15',
+  summary: Object.freeze({
+    category: 'deposit',
+    label: 'Payroll account',
+    availableFunds: 26240.15,
+    currentBalance: 26240.15,
+  }),
+  transactions: Object.freeze([]),
+});
+
+const MIGUEL_SAVINGS_ACCOUNT = Object.freeze({
+  id: 'account-miguel-savings',
+  accountId: 'account-miguel-savings',
+  profileId: MIGUEL_PROFILE_ID,
+  userId: 'miguel',
+  number: '•••• 9034',
+  accountNumber: '•••• 9034',
+  maskedAccountNumber: '•••• 9034',
+  name: 'Peso savings',
+  type: 'savings',
+  currency: 'PHP',
+  balance: 116620.1,
+  availableBalance: 116620.1,
+  currentBalance: 116620.1,
+  pendingAmount: 0,
+  status: 'active',
+  institution: 'BPI BANK',
+  interestRate: 3.25,
+  lastStatementDate: '30 Sep',
+  openedAt: '2022-07-08',
+  lastUpdated: '2026-10-14T08:10:00+08:00',
+  figuresSummary:
+    'Available and current PHP 116,620.10. Summary pending PHP 0.00. Interest 3.25% per annum. Last statement 30 Sep',
+  summary: Object.freeze({
+    category: 'savings',
+    label: 'Peso savings account',
+    availableFunds: 116620.1,
+    currentBalance: 116620.1,
+    pendingAmount: 0,
+    interestRate: 3.25,
+    lastStatement: '30 Sep',
+  }),
+  savingsSummary: Object.freeze({
+    goal: 'Payday Ipon Goal',
+    interestRate: 3.25,
+    pendingAmount: 0,
+    lastStatement: '30 Sep',
+    currentAmount: 116620.1,
+  }),
+  transactions: Object.freeze([]),
+});
+
+const MIGUEL_CREDIT_ACCOUNT = Object.freeze({
+  id: 'account-miguel-credit',
+  accountId: 'account-miguel-credit',
+  profileId: MIGUEL_PROFILE_ID,
+  userId: 'miguel',
+  number: '•••• 1188',
+  accountNumber: '•••• 1188',
+  maskedAccountNumber: '•••• 1188',
+  name: 'Credit card',
+  type: 'credit',
+  currency: 'PHP',
+  balance: 8450.0,
+  amountDue: 8450.0,
+  creditLimit: 50000.0,
+  availableCredit: 41550.0,
+  availableBalance: 41550.0,
+  currentBalance: 8450.0,
+  outstandingBalance: 8450.0,
+  status: 'active',
+  institution: 'BPI BANK',
+  openedAt: '2023-11-20',
+  lastUpdated: '2026-10-14T08:10:00+08:00',
+  figuresSummary:
+    'Amount due PHP 8,450.00. Limit PHP 50,000.00. Available credit PHP 41,550.00',
+  summary: Object.freeze({
+    category: 'credit',
+    label: 'Credit card',
+    amountDue: 8450.0,
+    creditLimit: 50000.0,
+    availableCredit: 41550.0,
+  }),
+  creditSummary: Object.freeze({
+    creditLimit: 50000.0,
+    availableCredit: 41550.0,
+    outstandingBalance: 8450.0,
+    amountDue: 8450.0,
+    minimumPayment: 8450.0,
+  }),
+  transactions: Object.freeze([]),
+});
+
+const MIGUEL_LOAN_ACCOUNT = Object.freeze({
+  id: 'account-miguel-loan',
+  accountId: 'account-miguel-loan',
+  profileId: MIGUEL_PROFILE_ID,
+  userId: 'miguel',
+  number: '•••• 7712',
+  accountNumber: '•••• 7712',
+  maskedAccountNumber: '•••• 7712',
+  name: 'Home loan',
+  type: 'loan',
+  currency: 'PHP',
+  balance: 2418450.0,
+  availableBalance: 0,
+  currentBalance: 2418450.0,
+  outstandingBalance: 2418450.0,
+  status: 'active',
+  institution: 'BPI BANK',
+  openedAt: '2023-05-10',
+  lastUpdated: '2026-10-14T08:10:00+08:00',
+  figuresSummary: 'Outstanding PHP 2,418,450.00',
+  summary: Object.freeze({
+    category: 'loan',
+    label: 'Home loan',
+    outstandingBalance: 2418450.0,
+  }),
+  loanSummary: Object.freeze({
+    outstandingBalance: 2418450.0,
+  }),
+  transactions: Object.freeze([]),
+});
+
+const ROSA_CHECKING_ACCOUNT = Object.freeze({
+  id: 'account-rosa-checking',
+  accountId: 'account-rosa-checking',
+  profileId: ROSA_PROFILE_ID,
+  userId: 'rosa',
+  number: '•••• 2204',
+  accountNumber: '•••• 2204',
+  maskedAccountNumber: '•••• 2204',
+  name: 'Salary account',
+  type: 'deposit',
+  subtype: 'salary',
+  currency: 'PHP',
+  balance: 54300.0,
+  availableBalance: 54300.0,
+  currentBalance: 54300.0,
+  status: 'active',
+  institution: 'BPI BANK',
+  openedAt: '2020-09-02',
+  lastUpdated: '2026-10-02T09:00:00+08:00',
+  figuresSummary: 'Available and current PHP 54,300.00',
+  summary: Object.freeze({
+    category: 'deposit',
+    label: 'Salary account',
+    availableFunds: 54300.0,
+    currentBalance: 54300.0,
+  }),
+  transactions: Object.freeze([]),
+});
+
+const ROSA_LOAN_ACCOUNT = Object.freeze({
+  id: 'account-rosa-loan',
+  accountId: 'account-rosa-loan',
+  profileId: ROSA_PROFILE_ID,
+  userId: 'rosa',
+  number: '•••• 6640',
+  accountNumber: '•••• 6640',
+  maskedAccountNumber: '•••• 6640',
+  name: 'Home loan',
+  type: 'loan',
+  currency: 'PHP',
+  balance: 1250000.0,
+  availableBalance: 0,
+  currentBalance: 1250000.0,
+  outstandingBalance: 1250000.0,
+  status: 'active',
+  institution: 'BPI BANK',
+  openedAt: '2024-01-18',
+  lastUpdated: '2026-10-02T09:00:00+08:00',
+  figuresSummary: 'Outstanding PHP 1,250,000.00',
+  summary: Object.freeze({
+    category: 'loan',
+    label: 'Home loan',
+    outstandingBalance: 1250000.0,
+  }),
+  loanSummary: Object.freeze({
+    outstandingBalance: 1250000.0,
+  }),
+  transactions: Object.freeze([]),
+});
+
+// Retained export alias for test compatibility if imported directly
+const ROSA_SAVINGS_ACCOUNT = ROSA_CHECKING_ACCOUNT;
+
+export const ACCOUNTS = Object.freeze([
+  MIGUEL_CHECKING_ACCOUNT,
+  MIGUEL_SAVINGS_ACCOUNT,
+  MIGUEL_CREDIT_ACCOUNT,
+  MIGUEL_LOAN_ACCOUNT,
+  ROSA_CHECKING_ACCOUNT,
+  ROSA_LOAN_ACCOUNT,
+]);
+
+export const accounts = ACCOUNTS;
+
+export {
+  MIGUEL_CHECKING_ACCOUNT,
+  MIGUEL_SAVINGS_ACCOUNT,
+  MIGUEL_CREDIT_ACCOUNT,
+  MIGUEL_LOAN_ACCOUNT,
+  ROSA_CHECKING_ACCOUNT,
+  ROSA_LOAN_ACCOUNT,
+  ROSA_SAVINGS_ACCOUNT,
+};
+
+export default ACCOUNTS;

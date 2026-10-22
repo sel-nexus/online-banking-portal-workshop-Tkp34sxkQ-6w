@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Online Banking Portal</title>
+  <desc id="desc">A red banking shield with a white geometric arch.</desc>
+  <rect width="64" height="64" rx="14" fill="#b11116"/>
+  <path fill="#fff" d="M32 10 14 18v5h36v-5L32 10Zm-13 17v18h5V27h-5Zm10 0v18h6V27h-6Zm11 0v18h5V27h-5ZM13 50h38v-5H13v5Z"/>
+  <path fill="#d71920" d="m32 16 9 4H23l9-4Z"/>
+</svg>
